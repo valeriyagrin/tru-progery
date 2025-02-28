@@ -19,14 +19,14 @@ using namespace sf;
 class Game
 {
 private:
-	//Переменные
+	//Variables
 	RenderWindow *window;
 	Event sfEvent;
 
 	Clock frameClock;
 	float frame;
 
-	//Иницаиализированные функции
+	//Initialized functions
 
 	void initWindow();
 
@@ -36,7 +36,7 @@ public:
 	Game();
 	virtual ~Game();
 
-	//Функции
+	//Functions
 
 	void updateframe();
 	void updateSMFLEvents();

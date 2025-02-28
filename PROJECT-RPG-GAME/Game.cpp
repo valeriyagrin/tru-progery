@@ -3,14 +3,14 @@ using namespace sf;
 
 //Static functions
 
-//Иницаиализированные функции
+//Initialized functions
 
 void Game::initWindow() {
 
 	this -> window = new RenderWindow(VideoMode(200, 200), "GAME-PROJECT-RPG");
 }
 
-//Конструкторы/Деструкторы
+//Constructors/Destructors
 
 
 Game::Game() {
@@ -27,7 +27,7 @@ Game::~Game() {
 
 void Game::updateframe() {
 
-    //Обновляет кадровые переменные с временем берущим обновления и рендер одним кадром
+    //Updates frame variables with time taking updates and rendering in one frame
 
     this->frame = this->frameClock.restart().asSeconds();
 
@@ -37,7 +37,7 @@ void Game::updateframe() {
 }
 
 
-//Функции
+//Functions
 
 
 void Game::updateSMFLEvents() {
@@ -58,7 +58,7 @@ void Game::render() {
 
     this->window->clear();
 
-    //Рендер вещей
+    //Rendering of things
 
     this->window->display();
 
